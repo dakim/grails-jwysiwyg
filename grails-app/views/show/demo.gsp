@@ -3,15 +3,18 @@
 <head>
 
 	<title>Demo</title>
-	<r:require module="controls-default" />
-	<r:layoutResources />
+<%--	<r:require modules="jquery, jwysiwyg, controls-default" />--%>
+	<r:require modules="jquery, controls-default" />
+<%--	<r:layoutResources />--%>
 	
 	<style type="text/css" media="screen">
 		#container{ width:600px; }
 	</style>
 </head>
 <body>
+<p>
 	Read <a href="https://github.com/akzhan/jwysiwyg#usage"> usage</a> for information
+	</p>
 	<br><br><br>
 	<g:form action="post" method="post">
 		
@@ -27,6 +30,7 @@
 		//]]>
 		</script>
 		<div id="container">
+			<label for="textarea"> Textarea with editor: </label>
 			<textarea id="editor" name="content">
 				
 			</textarea>
